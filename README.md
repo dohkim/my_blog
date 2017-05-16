@@ -8,7 +8,7 @@
 - Blog
 - Portfolio
 - Drag and drop interface
-- 
+
 ### Code Example
 
 ```ruby
