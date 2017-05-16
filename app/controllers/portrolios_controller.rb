@@ -1,0 +1,2 @@
+class PortroliosController < ApplicationController
+end
