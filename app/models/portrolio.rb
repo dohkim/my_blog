@@ -1,2 +1,0 @@
-class Portrolio < ApplicationRecord
-end
