@@ -17,7 +17,7 @@
   <tbody>
     <% @portfolios.each do |portfolio| %>
       <tr>
-        <td><%= portfolio.title %></td>
+        <td><%= link_to portfolio.title, portfolio %></td>
         <td><%= portfolio.subtitle %></td>
         <td><%= portfolio.body %></td>
         <td><%= image_tag portfolio.main_image unless portfolio.main_image.nil? %></td>

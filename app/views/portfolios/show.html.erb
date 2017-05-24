@@ -1,27 +1,19 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
+<%= image_tag @portfolio.main_image unless @portfolio.main_image.nil? %>
+<h1>
   <%= @portfolio.title %>
-</p>
+</h1>
 
-<p>
-  <strong>Subtitle:</strong>
+<em>
   <%= @portfolio.subtitle %>
-</p>
+</em>
 
 <p>
-  <strong>Body:</strong>
   <%= @portfolio.body %>
 </p>
 
 <p>
-  <strong>Main iamge:</strong>
-  <%= @portfolio.main_image unless @portfolio.main_image.nil? %>
-</p>
-
-<p>
-  <strong>Thumb image:</strong>
   <%= @portfolio.thumb_image unless @portfolio.main_image.nil?%>
 </p>
 
