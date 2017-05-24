@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @portfolio.title %>
+</p>
+
+<p>
+  <strong>Subtitle:</strong>
+  <%= @portfolio.subtitle %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @portfolio.body %>
+</p>
+
+<p>
+  <strong>Main iamge:</strong>
+  <%= @portfolio.main_image unless @portfolio.main_image.nil? %>
+</p>
+
+<p>
+  <strong>Thumb image:</strong>
+  <%= @portfolio.thumb_image unless @portfolio.main_image.nil?%>
+</p>
+
+<%= link_to 'Edit', edit_portfolio_path(@portfolio) %> |
+<%= link_to 'Back', portfolios_path %>
