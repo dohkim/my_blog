@@ -6,6 +6,10 @@ class PortfoliosController < ApplicationController
   def index
     @portfolios = Portfolio.all
   end
+  
+  def angular
+    @angular_portfolio_items = Portfolio.angular
+  end
 
   # GET /portfolios/1
   # GET /portfolios/1.json
@@ -15,6 +19,7 @@ class PortfoliosController < ApplicationController
   # GET /portfolios/new
   def new
     @portfolio = Portfolio.new
+    3.times { @portfolio.technologies.build }
   end
 
   # GET /portfolios/1/edit
@@ -28,7 +33,7 @@ class PortfoliosController < ApplicationController
 
     respond_to do |format|
       if @portfolio.save
-        format.html { redirect_to @portfolio, notice: 'Portfolio was successfully created.' }
+        format.html { redirect_to portfolio_show_path(@portfolio), notice: 'Portfolio was successfully created.' }
         format.json { render :show, status: :created, location: @portfolio }
       else
         format.html { render :new }
@@ -42,7 +47,7 @@ class PortfoliosController < ApplicationController
   def update
     respond_to do |format|
       if @portfolio.update(portfolio_params)
-        format.html { redirect_to @portfolio, notice: 'Portfolio was successfully updated.' }
+        format.html { redirect_to portfolio_show_path(@portfolio), notice: 'Portfolio was successfully updated.' }
         format.json { render :show, status: :ok, location: @portfolio }
       else
         format.html { render :edit }
@@ -69,6 +74,6 @@ class PortfoliosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def portfolio_params
-      params.require(:portfolio).permit(:title, :subtitle, :body, :main_iamge, :thumb_image)
+      params.require(:portfolio).permit(:title, :subtitle, :body, :main_iamge, :thumb_image, technologies_attributes: [:name])
     end
 end
