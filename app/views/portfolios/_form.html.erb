@@ -35,6 +35,15 @@
     <%= f.label :thumb_image %>
     <%= f.text_area :thumb_image %>
   </div>
+  
+  <ul>
+    <%= f.fields_for :technologies do |tech| %>
+      <li> 
+        <%= tech.label :name %>
+        <%= tech.text_field :name %>
+      </li>
+    <% end %>
+  </ul>
 
   <div class="actions">
     <%= f.submit %>
