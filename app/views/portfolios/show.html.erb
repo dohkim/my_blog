@@ -13,9 +13,13 @@
   <%= @portfolio.body %>
 </p>
 
-<p>
-  <%= @portfolio.thumb_image unless @portfolio.main_image.nil?%>
-</p>
+<H2>Technologies Used:</H2>
+<% @portfolio.technologies.each do |t| %>
+  <p><%= t.name %></p>
+<% end %>
+
 
 <%= link_to 'Edit', edit_portfolio_path(@portfolio) %> |
 <%= link_to 'Back', portfolios_path %>
+<hr>
+
