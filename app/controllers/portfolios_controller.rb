@@ -1,6 +1,6 @@
 class PortfoliosController < ApplicationController
   before_action :set_portfolio, only: [:show, :edit, :update, :destroy]
-
+  layout 'portfolio'
   # GET /portfolios
   # GET /portfolios.json
   def index
