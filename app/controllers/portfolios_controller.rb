@@ -24,6 +24,7 @@ class PortfoliosController < ApplicationController
 
   # GET /portfolios/1/edit
   def edit
+    
   end
 
   # POST /portfolios
