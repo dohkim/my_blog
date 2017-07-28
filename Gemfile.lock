@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/dohkim/doh_kim_tool
+  revision: 4b01ebce80846bcfb115740a5ed8763fadbc572a
+  specs:
+    doh_kim_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -187,6 +193,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
   devise (~> 4.3)
+  doh_kim_tool!
   friendly_id (~> 5.1.0)
   jbuilder (~> 2.5)
   jquery-rails
@@ -204,4 +211,4 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 BUNDLED WITH
-   1.15.0
+   1.15.3

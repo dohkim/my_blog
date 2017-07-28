@@ -16,4 +16,8 @@ module ApplicationHelper
         end
     end
    
+   
+   def copyright_generator
+       DohKimTool::Renderer.copyright "Doh Kim", "All rights reserved"
+   end
 end
