@@ -4,6 +4,6 @@
         <td><%= portfolio.body %></td>
         <td><%= image_tag portfolio.main_image unless portfolio.main_image.nil? %></td>
         <td><%= image_tag portfolio.thumb_image unless portfolio.thumb_image %></td>
-        <td><%= link_to 'Edit', edit_portfolio_path(portfolio) %></td>
-        <td><%= link_to 'Destroy', portfolio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Edit', edit_portfolio_path(portfolio) if logged_in?(:site_admin) %></td>
+        <td><%= link_to 'Destroy', portfolio, method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:site_admin) %></td>
 </tr>

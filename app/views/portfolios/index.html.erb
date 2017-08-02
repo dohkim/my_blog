@@ -22,4 +22,4 @@
 
 <br>
 
-<%= link_to 'New Portfolio', new_portfolio_path %>
+<%= link_to 'New Portfolio', new_portfolio_path if logged_in?(:site_admin) %>
