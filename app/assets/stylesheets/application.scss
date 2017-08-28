@@ -169,6 +169,22 @@ Custom style
   text-align: left;
 }
 
-.auth-links a{
+.auth-links {
+  margin-top: 10px;
+  a{
   color: black;
+  }
+}
+
+.register-text{
+  text-align: right;
+}
+
+
+
+.login > .card {
+  width: 22rem;
+  margin: 0 auto;
+  float : none;
+  margin-bottom: 10px;
 }
