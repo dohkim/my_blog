@@ -1,5 +1,5 @@
 <div class="card">
-        <%= image_tag portfolio.main_image unless portfolio.main_image.nil? %>
+        <%= image_tag portfolio.thumb_image unless portfolio.thumb_image.nil? %>
         <p class="card-text">
                 <span><%= link_to portfolio.title, portfolio_show_path(portfolio) %></span>
                 <%= portfolio.subtitle %>
