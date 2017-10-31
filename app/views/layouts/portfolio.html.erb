@@ -17,7 +17,7 @@
    
     
     <!--Start of masterhead-->
-    <%= render 'shared/portfolio_masterhead' %>
+    <%= render 'shared/portfolio_masterhead' unless logged_in?(:site_admin) && (params[:action]=="new" ||  params[:action]=="edit") %>
     <!--End of masterhead-->
    
     <%= yield %>
