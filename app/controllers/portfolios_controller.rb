@@ -6,7 +6,7 @@ class PortfoliosController < ApplicationController
   # GET /portfolios
   # GET /portfolios.json
   def index
-    @portfolios = Portfolio.all
+    @portfolios = Portfolio.by_position
   end
   
   def angular
@@ -15,7 +15,7 @@ class PortfoliosController < ApplicationController
 
   # GET /portfolios/1
   # GET /portfolios/1.json
-  def show
+  def showPo
   end
 
   # GET /portfolios/new
