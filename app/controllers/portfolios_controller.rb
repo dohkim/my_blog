@@ -19,11 +19,13 @@ class PortfoliosController < ApplicationController
   def angular
     @angular_portfolio_items = Portfolio.angular
   end
+  
+  def show
+  end
 
   # GET /portfolios/1
   # GET /portfolios/1.json
-  def showPo
-  end
+  
 
   # GET /portfolios/new
   def new
