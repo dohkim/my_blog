@@ -1,14 +1,8 @@
 <%= form_for(portfolio) do |f| %>
   <% if portfolio.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(portfolio.errors.count, "error") %> prohibited this portfolio from being saved:</h2>
-
-      <ul>
-      <% portfolio.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
+     <% portfolio.errors.full_messages.each do |error| %>
+      <%= js add_gritter(error, title: "Doh kim's Blog", sticky: false) %>
+    <% end %>
   <% end %>
   
   <div class="row">
