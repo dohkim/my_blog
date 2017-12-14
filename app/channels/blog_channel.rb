@@ -1,0 +1,12 @@
+class BlogChannel < ApplicationCable::Chanel
+    def subscribed
+        stream_from "blogs_#{params['blog_id']}_channel"
+    end
+    
+    def unsubscribed
+    end
+    
+    def send_comment(data)
+        current_user.comments.create!(content: data['comment'], blod_id: data['blog_id'])
+    end
+end
