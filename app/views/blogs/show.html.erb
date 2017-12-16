@@ -3,9 +3,6 @@
   
   <h2><%= @blog.title %></h2>
   
-  <%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin)  %><br>
-  <%= link_to 'Back', blogs_path %>
-  
   <p>
     <%= @blog.body %>
   </p>
@@ -16,6 +13,9 @@
     <%= render @blog.comments %>
   </div>
   <!--End of comment-->
+  <hr>
+  <%= link_to 'Edit', edit_blog_path(@blog), class: "btn btn-primary btn-sm" if logged_in?(:site_admin)  %>
+  <%= link_to 'Back', blogs_path, class: "btn btn-primary btn-sm" %>
   
   
 </div><!-- /.blog-main -->
