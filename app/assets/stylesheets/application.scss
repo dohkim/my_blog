@@ -226,3 +226,20 @@ Custom style
   
   
 }
+
+.app-card-container{
+  text-align: left;
+  color: black;
+  > .card{
+    padding: 40px;
+  }
+  
+  a{
+    color: blue;
+  }
+}
+
+
+.profile-img{
+  border: 1px solid grey;
+}
