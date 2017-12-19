@@ -20,5 +20,6 @@ Bundler.require(*Rails.groups)
 module MyBlog
   class Application < Rails::Application
     config.eager_load_paths << "#{Rails.root}/lib"
+    config.secret_key_base = ENV["SECRET_KEY_BASE"]
   end
 end
