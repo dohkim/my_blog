@@ -28,8 +28,6 @@ a:hover {
  */
 
 
-
-
 html,
 body {
   height: 100%;
@@ -38,7 +36,6 @@ body {
 body {
   color: #fff;
   text-align: center;
-  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
 }
 
 h1, .h1,
@@ -175,31 +172,26 @@ h6, .h6 {
 }
 
 /*
-Custom style
-*/
-.card-block{
+ * Custom Styles
+ */
+
+.card-block {
   color: black;
   text-align: left;
 }
 
-.auth-links {
-  margin-top: 10px;
-  a{
+.auth-links a {
   color: black;
-  }
 }
 
-.register-text{
+.register-text {
   text-align: right;
 }
-
-
 
 .login > .card {
   width: 22rem;
   margin: 0 auto;
-  float : none;
-  margin-bottom: 10px;
+  float: none;
 }
 
 .app-nav span {
@@ -222,46 +214,46 @@ Custom style
   background-size: cover;
 }
 
-.app-footer{
+.app-footer {
   color: white;
 }
 
-.tech-news{
+.tech-news {
   color: black;
   margin: 20px;
-  a {
-    color: green;
-  }
-  .card{
-    padding: 30px;
-  }
-  
-  
 }
 
-.app-card-container{
-  text-align: left;
+.tech-news > .card {
+  padding: 30px;
+}
+
+.tech-news a {
+  color: green;
+}
+
+.app-card-container {
   color: black;
-  > .card{
-    padding: 40px;
-  }
-  
-  a{
-    color: blue;
-  }
+  text-align: left;
 }
 
+.app-card-container > .card {
+  padding: 40px;
+}
 
-.profile-img{
+.profile-img {
   border: 1px solid grey;
 }
 
-.card-block{
+.app-card-container a {
+  color: #8B0000;
+}
+
+.card-block {
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-.skill{
+.skill {
   margin-top: 10px;
   margin-bottom: 10px;
 }
