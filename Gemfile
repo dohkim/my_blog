@@ -73,4 +73,4 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'
 end
 
-ruby "2.4.0"
+ruby "2.3.1"
