@@ -1,7 +1,7 @@
 User.create!(
-    email: "test@test.com",
-    password: "testtest",
-    password_confirmation: "testtest",
+    email: "tank2705@gmail.com",
+    password: "kim1676",
+    password_confirmation: "kim1676",
     name: "Admin",
     roles: "site_admin"
     )
@@ -24,7 +24,7 @@ puts "1 Regular user created"
     )
 end
     
-10.times do |x|
+5.times do |x|
    Blog.create!(
       title: "My Blog Post #{x}",
       body: "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
@@ -32,18 +32,19 @@ end
     ) 
 end
 
-puts "10 blog posts created"
+puts "5 blog posts created"
 
-5.times do |x|
-    Skill.create!(
-        title: "Rails #{x}",
-        percent_utilized: 15
-    )
-end
+
+Skill.create!(title: "Ruby on Rails",percent_utilized: 40)
+Skill.create!(title: "Android Java",percent_utilized: 30)
+Skill.create!(title: "Ruby Core",percent_utilized: 20)
+Skill.create!(title: "Angular Js",percent_utilized: 10)
+
+
 
 puts "5 skills posts created"
 
-8.times do |x|
+1.times do |x|
     Portfolio.create!(
         title: "Portfolio title: #{x}",
         subtitle: "Ruby on Rails",
@@ -63,7 +64,7 @@ end
     )
 end
 
-puts "9 porfolio created"
+puts "1 porfolio created"
 
 3.times do |x|
         Portfolio.last.technologies.create!(
