@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require jquery
+//= require tether
 //= require jquery_ujs
 //= require turbolinks
 //= require jquery-ui
@@ -20,6 +21,5 @@
 //= require lib/typed
 //= require typed-implementation
 //= require cable
-//= require tether
 //= require_tree .
 //= require bootstrap-sprockets
