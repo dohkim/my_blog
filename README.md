@@ -1,7 +1,7 @@
 # My_Blog Portfolio
 
 > This is a Ruby on Rails 5 Application that my portfolios.
-
+> Visie website https://victordohkim.herokuapp.com/
 ### Features
 
 - Real time chat engine for comments
